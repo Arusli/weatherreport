@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+</head>
+<body>
+    <div class='container'>
+        <h1>Weather Report</h1>
+        <div class='input-container'>
+            <input type='text' class='city-input' placeholder='city' autofocus>
+            <input type='text' class='state-input' placeholder='state' maxlength = '2' autofocus>
+        </div>
+        <input type='submit' value='Go' class='button' onclick=makeRequest()>
+    
+        </br>
+        <div class='weatherman'>
+            <h2 class='report'></h2>    
+        </div>
+        
+    </div>
+
+    <script src="uscitylist.json"></script>
+    <!-- imports the city list as a js var. 
+        questions: 
+        can i do this with the json file? answer: yes.
+        how are hte quotation marks around properties interpreted? -->
+    <script src="script.js"></script>
+    <script src="states.js"></script>
+</body>
+</html>
